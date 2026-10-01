@@ -1,6 +1,13 @@
 # Intelligent Lineage Assistant
 
-Application Streamlit de gouvernance des données qui centralise l’exploration des métadonnées, le Data Lineage et l’analyse d’impact dans Apache Atlas. Elle propose également un assistant conversationnel basé sur la récupération de contexte Atlas (RAG) et une gestion locale sécurisée des accès.
+
+**Intelligent Lineage Assistant** est une plateforme de **Data Lineage** développée en **Python avec Streamlit**, et intégrée à **Apache Atlas** pour la gestion, l’exploration et la traçabilité des métadonnées.
+
+Elle permet de **suivre le parcours des données de leur source jusqu’à leur destination**, en retraçant les transformations, dépendances et processus qu’elles traversent.
+
+La plateforme centralise les métadonnées techniques et métier, permet de visualiser le **Data Lineage**, d’identifier les relations entre tables, colonnes et processus, et d’analyser l’impact potentiel d’une modification sur les objets dépendants.
+
+Elle intègre également un **assistant conversationnel intelligent** permettant d’interroger les métadonnées et le parcours des données en langage naturel grâce à une architecture **RAG** combinant **FAISS, embeddings et Mistral**.
 
 ## Contexte et objectifs
 
