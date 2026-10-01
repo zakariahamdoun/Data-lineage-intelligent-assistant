@@ -37,6 +37,7 @@ Ses objectifs sont de :
 — Automatiser l’alimentation d’Apache Atlas : envoyer automatiquement les
 métadonnées vers Apache Atlas à l’aide de ses API afin d’éviter la création manuelle
 de chaque table, colonne et relation.
+
 — Représenter les liens et les dépendances : mettre en évidence les relations
 entre les différents objets de données et les processus qui les transforment.
 
@@ -50,7 +51,7 @@ poser des questions de manière simple, sans avoir à écrire de code ou à maî
 les aspects techniques d’Apache Atlas.
 
 — Produire des réponses contextualisées : permettre au LLM de générer des
-réponses à partir des métadonnées réelles récupérées dans Apache Atlas, afin de
+réponses à partir des métadonnées récupérées dans Apache Atlas, afin de
 limiter les réponses non fondées et de fournir des informations adaptées au contexte
 du projet.
 
