@@ -1,0 +1,19 @@
+services:
+  atlas-proxy:
+    image: nginx:1.27-alpine
+    container_name: atlas-iframe-proxy
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:8081"
+    environment:
+      ATLAS_AUTHORIZATION: "${ATLAS_AUTHORIZATION:?Set ATLAS_AUTHORIZATION privately to your Basic authorization header}"
+      NGINX_ENVSUBST_FILTER: "^ATLAS_AUTHORIZATION$"
+    volumes:
+      - ./nginx/atlas_clean.conf.template:/etc/nginx/templates/default.conf.template:ro
+    networks:
+      - atlas-iframe
+
+networks:
+  atlas-iframe:
+    external: true
+    name: atlas-iframe-net

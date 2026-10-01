@@ -1,0 +1,71 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+nginx/atlas.conf
+app_backup_before_github.py
+alimentation_apache_atlas_backup_before_github.ipynb
+
+# Python environments and bytecode
+.venv/
+venv/
+env/
+rag_env/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+!notebooks/
+!notebooks/alimentation_apache_atlas_public.ipynb
+
+# Local application data and source extracts
+app_users.db
+*.db
+*.sqlite
+*.sqlite3
+transactions1.csv
+transactions_sep.xlsx
+fiche de projet.pptx
+
+# Logs, test outputs, caches and temporary files
+*.log
+*.log.*
+*.tmp
+*.temp
+*.bak
+*.swp
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.coverage
+*-tests.txt
+*-test-results.txt
+baseline-utf8-comparison.txt
+routing-validation.txt
+intent-test-results.txt
+*.diff
+1.25
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local review/archive artefacts (including an embedded Git repository)
+Code_source_data_lineage/
+app_clean.py
+assistant data lineage.py
+_ui_check.py
+test_catalogue_design.py
+
+# LaTeX build artefacts; keep .tex sources versioned
+Latex rapport data_lineage/*.aux
+Latex rapport data_lineage/*.log
+Latex rapport data_lineage/*.synctex.gz
