@@ -9,6 +9,25 @@ La plateforme centralise les métadonnées techniques et métier, permet de visu
 
 Elle intègre également un **assistant conversationnel intelligent** permettant d’interroger les métadonnées et le parcours des données en langage naturel grâce à une architecture **RAG** combinant **FAISS, embeddings et Mistral**.
 
+## Pourquoi ce projet ?
+
+Avec la multiplication des sources de données, des tables et des processus de transformation, il devient de plus en plus difficile de comprendre précisément le parcours d’une donnée au sein d’un système d’information.
+
+Les principales difficultés concernent notamment :
+
+- l’identification de l’origine et de la destination des données ;
+- la compréhension des transformations appliquées au cours de leur parcours ;
+- la lecture des dépendances entre tables, processus et systèmes ;
+- l’identification des éléments susceptibles d’être impactés par une modification ;
+- le temps nécessaire pour analyser manuellement ces dépendances ;
+- la complexité d’accès aux métadonnées et au Data Lineage pour les utilisateurs non techniques.
+
+Ce projet a donc été conçu pour automatiser la gestion et l’exploitation du **Data Lineage**, afin d’améliorer la traçabilité des données et de faciliter l’analyse des dépendances.
+
+La solution s’appuie sur **Apache Atlas** pour centraliser les métadonnées et représenter les relations entre les différents objets de données. Elle permet de suivre le parcours des données depuis leur source jusqu’à leur destination, d’explorer les transformations qu’elles traversent et d’analyser l’impact potentiel d’une modification.
+
+Un assistant intelligent complète la plateforme afin de permettre aux utilisateurs d’interroger les métadonnées et le Data Lineage en langage naturel, sans avoir besoin de connaître précisément les noms techniques des entités ou des processus.
+
 ## Contexte et objectifs
 
 Les objets de données d’une banque — tables PostgreSQL, données de transactions SQLite, fichiers et processus de transformation — doivent être compréhensibles et traçables. Le projet fournit une interface métier pour consulter leur structure, leur sens, leurs classifications, leur provenance et les impacts possibles d’un changement.
