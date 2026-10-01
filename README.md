@@ -55,6 +55,45 @@ réponses à partir des métadonnées récupérées dans Apache Atlas, afin de
 limiter les réponses non fondées et de fournir des informations adaptées au contexte
 du projet.
 
+## Aperçu de la plateforme
+
+### Connexion
+Interface d’authentification permettant aux utilisateurs autorisés d’accéder à la plateforme.
+
+![Connexion](assets/screenshots/connexion.png)
+
+### Demande d’accès
+Formulaire permettant à un nouvel utilisateur de demander un accès à la plateforme.
+
+![Demande d’accès](assets/screenshots/demande_acces.png)
+
+### Assistant IA
+Assistant conversationnel permettant d’interroger les métadonnées, le Data Lineage et les dépendances en langage naturel.
+
+![Assistant IA](assets/screenshots/assistant_IA.png)
+
+### Analyse d’impact
+Module permettant d’identifier les tables, colonnes et processus susceptibles d’être affectés par une modification.
+
+![Analyse d’impact](assets/screenshots/analyse_impact.png)
+
+### Visualisation du Data Lineage
+Vue permettant de suivre le parcours des données, depuis leur source jusqu’à leur destination, en passant par les différents processus de transformation.
+
+![Visualisation du Data Lineage](assets/screenshots/visualisation_data_lineage.png)
+
+### Catalogue des métadonnées
+Consultation centralisée des métadonnées techniques et métier, des classifications, des descriptions, des clés et des règles métier.
+
+![Catalogue des métadonnées](assets/screenshots/catalogue_metadonnees.png)
+
+### Administration
+Espace réservé à l’administrateur pour gérer les demandes d’accès et les comptes utilisateurs.
+
+![Administration - Vue 1](assets/screenshots/administration1.png)
+
+![Administration - Vue 2](assets/screenshots/administration2.png)
+
 ## Fonctionnalités principales
 
 - Catalogue des métadonnées : vues Tables et Colonnes, classifications Atlas, descriptions, clés, identifiants techniques et règles métier.
