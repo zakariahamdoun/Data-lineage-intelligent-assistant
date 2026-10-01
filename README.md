@@ -8,11 +8,23 @@ Les objets de données d’une banque — tables PostgreSQL, données de transac
 
 Ses objectifs sont de :
 
-- centraliser les métadonnées techniques, métier et de traçabilité ;
-- visualiser les relations et les parcours de données enregistrés dans Apache Atlas ;
-- faciliter l’analyse d’impact ;
-- répondre en langage naturel à partir du contexte récupéré ;
-- contrôler les accès à l’application.
+— Automatiser l’alimentation d’Apache Atlas : envoyer automatiquement les
+métadonnées vers Apache Atlas à l’aide de ses API afin d’éviter la création manuelle
+de chaque table, colonne et relation.
+— Représenter les liens et les dépendances : mettre en évidence les relations
+entre les différents objets de données et les processus qui les transforment.
+
+— Réaliser une analyse d’impact : identifier les conséquences possibles d’une
+modification. Par exemple, lorsqu’une colonne est supprimée, la solution doit permettre
+de retrouver les traitements, les tables et les autres éléments susceptibles
+d’être affectés.
+— Interroger le Data Lineage en langage naturel : permettre à l’utilisateur de
+poser des questions de manière simple, sans avoir à écrire de code ou à maîtriser
+les aspects techniques d’Apache Atlas.
+— Produire des réponses contextualisées : permettre au LLM de générer des
+réponses à partir des métadonnées réelles récupérées dans Apache Atlas, afin de
+limiter les réponses non fondées et de fournir des informations adaptées au contexte
+du projet.
 
 ## Fonctionnalités principales
 
