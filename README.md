@@ -18,9 +18,11 @@ entre les différents objets de données et les processus qui les transforment.
 modification. Par exemple, lorsqu’une colonne est supprimée, la solution doit permettre
 de retrouver les traitements, les tables et les autres éléments susceptibles
 d’être affectés.
+
 — Interroger le Data Lineage en langage naturel : permettre à l’utilisateur de
 poser des questions de manière simple, sans avoir à écrire de code ou à maîtriser
 les aspects techniques d’Apache Atlas.
+
 — Produire des réponses contextualisées : permettre au LLM de générer des
 réponses à partir des métadonnées réelles récupérées dans Apache Atlas, afin de
 limiter les réponses non fondées et de fournir des informations adaptées au contexte
