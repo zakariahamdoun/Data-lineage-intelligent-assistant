@@ -1,6 +1,32 @@
 # Intelligent Lineage Assistant
 
-Application Streamlit de gouvernance des données qui centralise l’exploration des métadonnées, le Data Lineage et l’analyse d’impact dans Apache Atlas. Elle propose également un assistant conversationnel basé sur la récupération de contexte Atlas (RAG) et une gestion locale sécurisée des accès.
+
+**Intelligent Lineage Assistant** est une plateforme de **Data Lineage** développée en **Python avec Streamlit**, et intégrée à **Apache Atlas** pour la gestion, l’exploration et la traçabilité des métadonnées.
+
+Elle permet de **suivre le parcours des données de leur source jusqu’à leur destination**, en retraçant les transformations, dépendances et processus qu’elles traversent.
+
+La plateforme centralise les métadonnées techniques et métier, permet de visualiser le **Data Lineage**, d’identifier les relations entre tables, colonnes et processus, et d’analyser l’impact potentiel d’une modification sur les objets dépendants.
+
+Elle intègre également un **assistant conversationnel intelligent** permettant d’interroger les métadonnées et le parcours des données en langage naturel grâce à une architecture **RAG** combinant **FAISS, embeddings et Mistral**.
+
+## Pourquoi ce projet ?
+
+Avec la multiplication des sources de données, des tables et des processus de transformation, il devient de plus en plus difficile de comprendre précisément le parcours d’une donnée au sein d’un système d’information.
+
+Les principales difficultés concernent notamment :
+
+- l’identification de l’origine et de la destination des données ;
+- la compréhension des transformations appliquées au cours de leur parcours ;
+- la lecture des dépendances entre tables, processus et systèmes ;
+- l’identification des éléments susceptibles d’être impactés par une modification ;
+- le temps nécessaire pour analyser manuellement ces dépendances ;
+- la complexité d’accès aux métadonnées et au Data Lineage pour les utilisateurs non techniques.
+
+Ce projet a donc été conçu pour automatiser la gestion et l’exploitation du **Data Lineage**, afin d’améliorer la traçabilité des données et de faciliter l’analyse des dépendances.
+
+La solution s’appuie sur **Apache Atlas** pour centraliser les métadonnées et représenter les relations entre les différents objets de données. Elle permet de suivre le parcours des données depuis leur source jusqu’à leur destination, d’explorer les transformations qu’elles traversent et d’analyser l’impact potentiel d’une modification.
+
+Un assistant intelligent complète la plateforme afin de permettre aux utilisateurs d’interroger les métadonnées et le Data Lineage en langage naturel, sans avoir besoin de connaître précisément les noms techniques des entités ou des processus.
 
 ## Contexte et objectifs
 
@@ -8,11 +34,27 @@ Les objets de données d’une banque — tables PostgreSQL, données de transac
 
 Ses objectifs sont de :
 
-- centraliser les métadonnées techniques, métier et de traçabilité ;
-- visualiser les relations et les parcours de données enregistrés dans Apache Atlas ;
-- faciliter l’analyse d’impact ;
-- répondre en langage naturel à partir du contexte récupéré ;
-- contrôler les accès à l’application.
+— Automatiser l’alimentation d’Apache Atlas : envoyer automatiquement les
+métadonnées vers Apache Atlas à l’aide de ses API afin d’éviter la création manuelle
+de chaque table, colonne et relation.
+
+— Représenter les liens et les dépendances : mettre en évidence les relations
+entre les différents objets de données et les processus qui les transforment.
+
+— Réaliser une analyse d’impact : identifier les conséquences possibles d’une
+modification. Par exemple, lorsqu’une colonne est supprimée, la solution doit permettre
+de retrouver les traitements, les tables et les autres éléments susceptibles
+d’être affectés.
+
+— Interroger le Data Lineage en langage naturel : permettre à l’utilisateur de
+poser des questions de manière simple, sans avoir à écrire de code ou à maîtriser
+les aspects techniques d’Apache Atlas.
+
+— Produire des réponses contextualisées : permettre au LLM de générer des
+réponses à partir des métadonnées récupérées dans Apache Atlas, afin de
+limiter les réponses non fondées et de fournir des informations adaptées au contexte
+du projet.
+
 
 ## Fonctionnalités principales
 
