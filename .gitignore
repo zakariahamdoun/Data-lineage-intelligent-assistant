@@ -50,7 +50,7 @@ baseline-utf8-comparison.txt
 routing-validation.txt
 intent-test-results.txt
 *.diff
-1.25
+
 
 # Local editor and OS files
 .vscode/
@@ -60,6 +60,6 @@ Thumbs.db
 
 # Local review/archive artefacts (including an embedded Git repository)
 Code_source_data_lineage/
-test_catalogue_design.py
+
 
 
