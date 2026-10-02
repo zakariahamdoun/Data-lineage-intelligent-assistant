@@ -29,7 +29,7 @@ app_users.db
 *.sqlite3
 transactions1.csv
 transactions_sep.xlsx
-fiche de projet.pptx
+
 
 # Logs, test outputs, caches and temporary files
 *.log
@@ -60,12 +60,6 @@ Thumbs.db
 
 # Local review/archive artefacts (including an embedded Git repository)
 Code_source_data_lineage/
-app_clean.py
-assistant data lineage.py
-_ui_check.py
 test_catalogue_design.py
 
-# LaTeX build artefacts; keep .tex sources versioned
-Latex rapport data_lineage/*.aux
-Latex rapport data_lineage/*.log
-Latex rapport data_lineage/*.synctex.gz
+
